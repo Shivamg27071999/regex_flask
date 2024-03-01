@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Validation</title>
+</head>
+<body>
+    <h1>Email Validation</h1>
+    <form action="/validate_email" method="post">
+        Email: <input type="text" name="email"><br>
+        <input type="submit">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
